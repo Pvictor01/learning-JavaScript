@@ -1,9 +1,9 @@
-//ARRAYS BIDIMENSIONAIS
+//ARRAYS BIDIMENSIONAIS...
 let array = [['A', 1], ['B', 2], ['C', 3], ['D', 4]];
 
 console.log(array[2][1]);
 
-// FUNÇÕES BÁSICAS DE ARRAYS
+// FUNÇÕES BÁSICAS DE ARRAYS...
 let array1 = ['aaa', 'bbb', 'ccc'];
 
 console.log(array1);
