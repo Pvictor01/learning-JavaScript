@@ -1,6 +1,4 @@
-//Recebem ou retornam outras funções, geralmente anônimas
-
-function doubleVelocity(velocity, printer) {//printer se torna um callback pois é chamado dentro de uma função de alta classe
+function doubleVelocity(velocity, printer) {
   let newVelocity = velocity * 2;
 
   printer(newVelocity);
@@ -8,13 +6,6 @@ function doubleVelocity(velocity, printer) {//printer se torna um callback pois 
   return newVelocity;
 };
 
-let printVelocity = doubleVelocity(40, newVelocity => {
-  console.log('A velocidade é ' + newVelocity + 'km/s');
-})
-
-/* OR
-function printerVelocity(velocity) {
-  console.log('A velocidade é ' + velocity+ 'km/s');
-};
-
-let newVelocity = doubleVelocity(90, printerVelocity);*/
+let showVelocity = doubleVelocity(20, (velocity) => {
+  console.log('Nova velocidade é ' + velocity + 'km/s');
+});
